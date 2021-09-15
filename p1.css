@@ -1,0 +1,248 @@
+html { 
+    background-color: rgb(230, 245, 241);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  body{
+    margin: 0;
+  }
+  
+  nav{
+    background-color: rgb(85, 88, 82);
+    color:rgb(216, 183, 183);
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    align-items:stretch;
+    z-index: 6;
+  }
+  nav .brand-image,.navbar{
+    display: inline-block;
+  }
+
+  .navbar{
+    width: 80%;
+    text-align: right;
+  }
+  nav ul li{
+    display: inline;
+    margin: 0 50px;
+    font-size: 30px;
+    padding: 10px;
+  }
+  nav ul li a{
+    color: rgb(230, 215, 215);
+    text-decoration: none;
+  }
+  nav ul li a:hover{
+    color: rgb(233, 132, 0);
+    background-color: rgb(148, 78, 66);
+    padding: 10px;
+  }
+
+  .card2-horizontal {
+    margin-top: 80px;
+    display: flex;
+    flex: 9 9 auto;
+    padding: 20px;
+  }
+  .card2{
+    background-color: rgba(135, 243, 229, 0.00);
+    margin: 50px;
+    transition: all .4s ease-in-out;
+    width: 85%;
+  }
+  .card2-title{
+    font-size: 50px;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(12, 34, 75);
+  }
+  .card2-text{
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    color: rgba(4, 58, 12, 0.999);
+    font-weight: 700;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+
+  .doscards{
+    display:flex;
+     flex-direction:row;
+     justify-content:space-between;
+     padding: 30px;
+     z-index: 0; 
+
+   }
+  .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 250px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: transparent;
+    color: rgb(90, 4, 4);
+    transform: rotateY(180deg);
+  }
+
+  
+
+
+  .card-horizontal {
+    display: flex;
+    flex: 9 9 auto;
+    padding: 20px;
+  }
+  .card{
+    background-color: rgba(85, 39, 8, 0.2);
+    margin: 40px;
+  }
+  .card-title{
+    font-size: 50px;
+    padding-left: 20px;
+    color: rgb(114, 9, 100);
+  }
+  .card-text{
+    font-size: 22px;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(49, 19, 2);
+  }
+  .card:hover {
+    box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.978);
+    background-color: rgba(44, 114, 4, 0.571);
+  }
+  .h1{
+    color: rgb(3, 3, 70);
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+  }
+  .h2{
+    color: rgb(76, 9, 90);
+    text-align: center;
+    font-size: 50px;
+  }
+  .container{
+    width: 50%;
+    margin: auto;
+    margin-top: 90px;
+    padding: 20px;
+    font-size: x-large;
+    border-radius: 3px;
+    border-color: rgb(235, 228, 235);
+    background-color: rgba(207, 168, 214, 0.6);
+    font-weight: 800;
+  }
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 5px;  
+    border: 3px solid #ccc; 
+    font-weight: 600;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: rgb(104, 22, 22);
+    color: rgb(255, 239, 196);
+    padding: 10px 10px;
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #700a0a;
+  }
+
+  .card3-horizontal {
+    margin-top: 10px;
+    display: flex;
+    flex: 9 9 auto;
+    padding: 10px;
+  }
+  .card3{
+    background-color: rgba(135, 243, 229, 0.00);
+    margin: 20px;
+    transition: all .4s ease-in-out;
+    width: 85%;
+  }
+  .card3-text{
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    color: rgba(112, 17, 30, 0.999);
+    font-weight: 700;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  #myBtn {
+    width: 220px;
+    font-size: 8px;
+    padding: 8px;
+    border: none;
+    color: rgba(77, 3, 100, 0.703);
+    background: rgb(201, 167, 18);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #myBtn a{
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #myBtn:hover {
+    background: rgba(81, 156, 206, 0.76);
+    color: rgba(77, 3, 100, 0.703);
+  }
+  
